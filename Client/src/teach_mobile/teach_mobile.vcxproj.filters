@@ -1,0 +1,1893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_teach_mobile.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\version.cc">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\vrefbuffer.cc">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\unpack.cc">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\adler32.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\compress.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\crc32.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\deflate.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\gzclose.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\gzlib.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\gzread.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\gzwrite.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\infback.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\inffast.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\inflate.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\inftrees.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\JlCompress.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\qioapi.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quaadler32.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quacrc32.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quagzipfile.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_quagzipfile.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_quagzipfile.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quaziodevice.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_quaziodevice.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_quaziodevice.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quazip.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quazipdir.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quazipfile.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_quazipfile.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_quazipfile.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quazipfileinfo.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quazipnewinfo.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\trees.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\uncompr.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\unzip.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\zip.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\zutil.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\LokiBuffer.cpp">
+      <Filter>LokiShared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\LokiCommand.cpp">
+      <Filter>LokiShared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\FileUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ImageUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\SMatrix.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\SPoint.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Util.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\YunHttp.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_YunHttp.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_YunHttp.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Settings.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SlidingWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SlidingWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SlidingWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\zone.cc">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="VerificationCodeImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VerificationCodeImage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VerificationCodeImage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TitleButton.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TitleComboBox.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TitleWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TopMostAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TwoStateImageButton.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\VideoWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AddCorrectDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AddCorrectDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AnimationThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AnimationThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AudioVolumeIndicator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AudioVolumeIndicator.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanBaseWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanBaseWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanBrowserDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanBrowserDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanCategoryList.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanCategoryList.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanCheckableButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanCheckableButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanElementHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanElementHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanList.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanList.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CameraWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CameraWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CheckableImageButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CheckableImageButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DrawingToolsTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DrawingToolsTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ElementLabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ElementLabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ElementLabelBorder.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ElementLabelBorder.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ElementResizableTitlebar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ElementResizableTitlebar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FileTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FileTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_formulaview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_formulaview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FourStateImageButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FourStateImageButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HeraMainWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HeraMainWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HtmlElementEditor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HtmlElementEditor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HtmlElementViewer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HtmlElementViewer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HtmlTextElementHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HtmlTextElementHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ImageElementHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ImageElementHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_jsedit.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_jsedit.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KePages.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KePages.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KeTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KeTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KeWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KeWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_NotifyWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_NotifyWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_NumberButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_NumberButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_OneImageButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_OneImageButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlayerPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlayerPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlayerProgressBar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlayerProgressBar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlayerTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlayerTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlayerWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlayerWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ScreenshotWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ScreenshotWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SelectColorMenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SelectColorMenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SelectNumberMenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SelectNumberMenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SysTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SysTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TestBaseWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TestBaseWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TestTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TestTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TextElementHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TextElementHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TitleButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TitleButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TitleComboBox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TitleComboBox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TwoStateImageButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TwoStateImageButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VideoWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VideoWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\AddCorrectDialog.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\AnimationAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\AnimationThread.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\AudioVolumeIndicator.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanBaseWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanBrowserDialog.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanCategoryList.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanCheckableButton.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanContent.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanContentVersion5.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanDocument.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanElementHelper.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanElementWithLabel.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanFile.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanList.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanTitleWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BottomMostAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\CameraWindow.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\CheckableImageButton.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ChineseMessageBox.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ColorButton.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\CompressedImageBuffer.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\CompressedImageElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\DrawElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\DrawingToolsTitleWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\Element.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ElementLabel.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ElementLabelBorder.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ElementResizableTitlebar.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\EllipseElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\FileTitleWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\formulaview.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\FourStateImageButton.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\HeraDocument.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\HeraMainWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\HideAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\HtmlElementEditor.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\HtmlElementPainter.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\HtmlElementViewer.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\HtmlTextElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\HtmlTextElementHelper.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ImageBuffer.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ImageElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ImageElementHelper.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\jsedit.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\KeFile.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\KePages.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\KeTitleWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\KeWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\LineColorAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\LineElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\LineStyleAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\LineWidthAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\LiveTitleWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\LiveWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\MediaElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\NetworkShowAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\NetworkSwitchPageAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\NotifyWindow.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\NumberButton.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\OneImageButton.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\PathElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\PathElementHelper.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\PlayerPage.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\PlayerProgressBar.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\PlayerTitleWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\PlayerWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\qtmmlwidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\qwt_mml_document.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\qwt_mml_entity_table.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\RectElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ScreenshotWindow.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\SelectColorMenu.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\SelectNumberMenu.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ShowAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\SizeAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\SwitchPageAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\SysTitleWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TestBanElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TestBanElementWithLabel.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TestBaseWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TestTitleWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TextChangedAction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TextElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TextElementHelper.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LokiClient.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LokiClient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LokiClient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalSave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoginEdit.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoginEdit.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoginButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoginButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoginLabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoginLabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MenuButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MenuButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobileActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobileActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainMenuActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainMenuActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlayerActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlayerActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoginTitleLabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoginTitleLabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ActivityTitlebar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ActivityTitlebar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="MobileActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ActivityTitleButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ActivityTitleButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ActivityTitleLabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ActivityTitleLabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ClasseActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ClasseActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ClasseActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="busyindicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_busyindicator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_busyindicator.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="qDebug2Logcat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\qhttp.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qhttp.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qhttp.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\qhttpauthenticator.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\QHttpFileDownloader.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QHttpFileDownloader.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QHttpFileDownloader.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KeTitlebar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KeTitlebar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveTitlebar.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveTitlebar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveTitlebar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayTitlebar.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlayTitlebar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlayTitlebar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="KeTitlebar.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivityTitlebar.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivityTitleButton.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivityTitleLabel.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\KeTime.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KeTime.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KeTime.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PreviewActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PreviewActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PreviewActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\OrigialDrawElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TitleCheckBox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TitleCheckBox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\TitleCheckBox.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="KeActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KeActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KeActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="AndroidCamera.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AndroidCamera.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AndroidCamera.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TouchableScrollArea.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TouchableScrollArea.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchableScrollArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OfflineClasseActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_OfflineClasseActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_OfflineClasseActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoginActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoginActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TitleActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TitleActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_flickcharm.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_flickcharm.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="flickcharm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HeaderLabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HeaderLabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ItemButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ItemButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="HeaderLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginTitleLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TeachingActivity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TeachingActivity.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachingActivity.cpp">
+      <Filter>Acitivity</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginCheckBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoginCheckBox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoginCheckBox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DownloadAllProgress.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DownloadAllProgress.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadAllProgress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BusyDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BusyDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="BusyDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HeraDocManager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HeraDocManager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\HeraDocManager.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\FontUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\MobileVideoWidget.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobileVideoWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobileVideoWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\HackManager.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\BanStateElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ImageStateElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\Hera.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ImageBaseElement.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LokiSocket.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LokiSocket.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LokiSocket.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\FitCurves.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\ToVector.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\Douglas.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\qtpiemenu.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtpiemenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtpiemenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\qtpieaction.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtpieaction.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtpieaction.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\qtpieitem.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtpieitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtpieitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\Menu.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginBottomLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoginBottomLabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoginBottomLabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="KeItemButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KeItemButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KeItemButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\object1.cpp">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\object.cc">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\SlidePresenterManager.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\Slide.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Slide.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Slide.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hera\SlidePresenter.cpp">
+      <Filter>Hera</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SlidePresenter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SlidePresenter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="teach_mobile.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="teach_mobile.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\library\quazip\quazip\quagzipfile.h">
+      <Filter>quazip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\library\quazip\quazip\quaziodevice.h">
+      <Filter>quazip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\library\quazip\quazip\quazipfile.h">
+      <Filter>quazip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\UIs\LokiLoginDialog.ui">
+      <Filter>Common\UIs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\YunHttp.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SlidingWidget.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="VerificationCodeImage.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\AddCorrectDialog.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\AnimationThread.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\AudioVolumeIndicator.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\BanBaseWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\BanBrowserDialog.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\BanCategoryList.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\BanCheckableButton.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\BanElementHelper.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\BanList.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\BanTitleWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\CameraWindow.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\CheckableImageButton.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\ColorButton.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\DrawingToolsTitleWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\ElementLabel.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\ElementLabelBorder.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\ElementResizableTitlebar.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\FileTitleWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\formulaview.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\FourStateImageButton.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\HeraMainWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\HtmlElementEditor.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\HtmlElementViewer.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\HtmlTextElementHelper.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\ImageElementHelper.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\jsedit.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\KePages.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\KeTitleWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\KeWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\LiveTitleWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\LiveWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\NotifyWindow.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\NumberButton.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\OneImageButton.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\PlayerPage.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\PlayerProgressBar.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\PlayerTitleWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\PlayerWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\ScreenshotWindow.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\SelectColorMenu.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\SelectNumberMenu.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\SysTitleWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\TestBaseWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\TestTitleWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\TextElementHelper.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\TitleButton.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\TitleComboBox.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\TitleWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\TwoStateImageButton.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\VideoWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\LokiClient.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LocalSave.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MenuButton.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainMenuActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobileActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PlayerActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClasseActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="busyindicator.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\qhttp.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\QHttpFileDownloader.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="KeTitlebar.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveTitlebar.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PlayTitlebar.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ActivityTitlebar.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ActivityTitleButton.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ActivityTitleLabel.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\KeTime.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PreviewActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\TitleCheckBox.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="KeActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AndroidCamera.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TouchableScrollArea.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OfflineClasseActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TitleActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flickcharm.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainWindow.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HeaderLabel.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ItemButton.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginButton.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginEdit.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginLabel.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginTitleLabel.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TeachingActivity.h">
+      <Filter>Acitivity</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginCheckBox.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DownloadAllProgress.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BusyDialog.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\HeraDocManager.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\MobileVideoWidget.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\HackManager.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\LokiSocket.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\qtpiemenu.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\qtpieaction.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\qtpieitem.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\Menu.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginBottomLabel.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="KeItemButton.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\Slide.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\hera\SlidePresenter.h">
+      <Filter>Hera</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{893ff954-411d-4c5e-9278-79ebf6fd1600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{93a10d83-b0c3-4174-8edd-aafe90ece0c0}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{d3197afb-1cba-45be-a4bc-13ccbcb3a7d9}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="MsgPack">
+      <UniqueIdentifier>{4ae13920-e1dd-434a-8c86-0134ca1f8ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quazip">
+      <UniqueIdentifier>{c49f250b-ca69-43ff-ad11-5d584290a804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hera">
+      <UniqueIdentifier>{1262d986-a915-4536-a5a3-a1e24c1a1a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LokiShared">
+      <UniqueIdentifier>{0b87efc7-d590-48e0-bca8-427258645837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{fde51843-6aa0-46ed-be78-f3d53277adb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\UIs">
+      <UniqueIdentifier>{38065257-bb3f-4124-90cd-b93c819e6546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Acitivity">
+      <UniqueIdentifier>{153a3a21-a584-4846-90b1-2154098a0c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Title">
+      <UniqueIdentifier>{91d8ffdb-edac-4b80-bc54-673e97af6f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\library\quazip\quazip\zutil.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\crc32.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\crypt.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\deflate.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\gzguts.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\inffast.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\inffixed.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\inflate.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\inftrees.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\ioapi.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\JlCompress.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quaadler32.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quachecksum32.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quacrc32.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quazip.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quazip_global.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quazipdir.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quazipfileinfo.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quazipnewinfo.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\trees.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\unzip.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\zconf.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\zip.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\zlib.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedCode\LokiBuffer.h">
+      <Filter>LokiShared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedCode\LokiCommand.h">
+      <Filter>LokiShared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\config.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ImageUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Qt.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SColor.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SMatrix.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SPoint.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\library.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Util.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\FileUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_LokiLoginDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Settings.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\AnimationAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\BanContent.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\BanContentVersion5.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\BanDocument.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\BanElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\BanElementWithLabel.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\BanFile.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\BottomMostAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\ChineseMessageBox.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\CompressedImageBuffer.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\CompressedImageElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\DrawElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\Element.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\EllipseElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\HeraDocument.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\HideAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\HtmlElementPainter.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\HtmlTextElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\ImageBuffer.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\ImageElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\KeFile.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\LineColorAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\LineElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\LineStyleAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\LineWidthAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\MediaElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\NetworkShowAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\NetworkSwitchPageAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\PathElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\PathElementHelper.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\qtmmlwidget.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\qwt_mml_document.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\qwt_mml_entity_table.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\RectElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\ShowAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\SizeAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\SwitchPageAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\TestBanElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\TestBanElementWithLabel.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\TextChangedAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\TextElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\TopMostAction.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="qDebug2Logcat.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\qhttpauthenticator_p.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\qringbuffer_p.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\OrigialDrawElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\FontUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Singleton.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\BanStateElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\ImageStateElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\Hera.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\ImageBaseElement.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\FitCurves.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\ToVector.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\Douglas.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hera\SlidePresenterManager.h">
+      <Filter>Hera</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

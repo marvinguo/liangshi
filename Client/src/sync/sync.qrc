@@ -1,0 +1,6 @@
+<RCC>
+    <qresource>
+      <file>../Resources/Images/background.jpg</file>
+      <file>../Resources/AppIcons/sync.png</file>
+    </qresource>
+</RCC>

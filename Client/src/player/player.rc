@@ -1,0 +1,3 @@
+//目前需要搞定app icon
+ #define      IDI_ICON1       1001
+IDI_ICON1               ICON    DISCARDABLE     "../Resources/AppIcons/player.ico"

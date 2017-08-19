@@ -1,0 +1,106 @@
+apk 限制在50M一下，可以附加两个文件，一个文件2G，共4G。
+Asset限制文件大小1M
+进程限制在16M，24M，32M,64M以后可能更大。
+android不同设备单个进程可用内存是不一样的，可以查看/system/build.prop文件。
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapgrowthlimit=48m
+dalvik.vm.heapsize=256m 
+heapsize参数表示单个进程可用的最大内存，但如果存在如下参数：
+dalvik.vm.heapgrowthlimit=48m表示单个进程内存被限定在48m,即程序运行过程中实际只能使用48m内存
+从上面来看使用navtive code分配内存是不在24MB的限制内的
+ 
+定义activity运行所在的进程名称。一般情况下，应用的所有组件都运行在为应用创建的默认的进程中，该默认进程的名称应用包名称一致。通过定义<application>元素的“process”属性可以为所有组件指定一个不同的默认进程。但是任意组件都可以重写默认进程，以便实现多进程操作。
+如果该属性指定名称以“：”开头，则一个新的专属于该应用的进程将会被创建。如果该进程名以小写字母开头，则为该activity提供权限以让其在一个全局的进程中运行。这样会允许多个应用的不同组件共用一个进程，以便节省资源。
+ 
+Android是支持多进程的，每个进程的内存使用限制一般为24MB的内存，所以当完成一些很耗费内存的操作如处理高分辨率图片时，需要单独开一个进程来执行该操作（上面的配置可以用来实现该操作）。即便如此，开发者还是不要随意多开进程来耗费用户的资源。（内存限制，有16MB，24MB， 32MB，很老的机型的内存限制会是16MB，这个具体还要再搜索下资料。。）
+ 
+另外一些还有一些其他的方式来绕过内存限制，使用更多的资源来完成自己的任务，如下文（有待实践）：
+                                 How to work around Android’s 24 MB memory limit
+TheAndroid framework enforces a per-process 24 MB memory limit. On some olderdevices, such as the G1, the limit is even lower at 16 MB.
+What’s more, the memory used by Bitmaps isincluded in the limit. For an application manipulating images it is pretty easyto reach this limit and get the process killed with an OOM exception:
+E/dalvikvm-heap(12517): 1048576-byte external allocation too largefor this process.
+E/GraphicsJNI(12517): VM won't let us allocate 1048576bytes
+D/AndroidRuntime(12517): Shutting down VM
+W/dalvikvm(12517): threadid=1: thread exiting with uncaught exception(group=0x4001d7f0)
+E/AndroidRuntime(12517): FATAL EXCEPTION: main
+E/AndroidRuntime(12517): java.lang.OutOfMemoryError: bitmap size exceeds VMbudget
+This limit is ridiculously low. For a device, like the NexusOne, with 512MB of physical RAM, setting the per-process memory limit for theforeground activity to only 5% of the RAM is a silly mistake. But anyway, that’s how things are and we have to live with it — i.e. find how to work around it.
+There are two ways to allocate much more memory than the limit:
+One way is to allocate memory from native code. Using the NDK(native development kit) and JNI, it’s possible toallocate memory from the C level (e.g. malloc/free or new/delete), and suchallocations are not counted towards the 24 MB limit. It’s true, allocating memory from native code is not as convenient asfrom Java, but it can be used to store some large amounts of data in RAM (evenimage data).
+Another way, which works well for images, is to use OpenGL textures — the texture memory is not counted towardsthe limit.
+To seehow much memory your app has really allocated you can useandroid.os.Debug.getNativeHeapAllocatedSize().
+Using either of the two techniques presented above, on a Nexus One,I could easily allocate 300MB for a single foreground process — more than 10 times the default 24 MBlimit
+ 
+ 众所周知，在写 android 程序的时候，很容易出现 OOM ，而出现的时机大多数是由 Bitmap decode 引发的：
+1
+
+ERROR/AndroidRuntime(16350): java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+
+      我们知道，android程序内存一般限制在16M，当然也有24M的，而android程序内存被分为2部分：native和dalvik：
+dalvik就是我们平常说的java堆，我们创建的对象是在这里面分配的，而bitmap是直接在native上分配的，对于内存的限制是 native+dalvik 不能超过最大限制。
+注：一旦内存分配给Java后，以后这块内存纵然开释后，也只能给Java的施用，这个估计跟java虚拟机里把内存分成好几块进行缓存的原因有关，反正C就别想用到这块的内存了，所以要是Java突然占用了一个大块内存，纵然很快开释了： 
+　　C能施用的内存 = 16M - Java某一瞬间占用的最大内存。 
+　　而Bitmap的生成是通过malloc进行内存分配的，占用的是C的内存，这个也就说明了，上面所说的的4MBitmap无法生成的原因，因为在13M被Java用过后，剩下C能用的只有3M了。
+      用以下命令可以查看程序的内存使用情况：
+ 	
+adb shell dumpsys meminfo packagename or pid 程序的包名或者进程id
+
+ 
+
+ 
+其中size是需要的内存，而allocated是分配了的内存，对应的2列分别是native和dalvik，当总数也就是total这一列超过单个程序内存的最大限制时，OOM就很有可能会出现了。
+       多数时候，发生OOM 都是在做一些跟图片相关的操作，以下提出一些建议尽量可以减少这种情况的发生：
+1
+
+.decode bitmap 的时候，尽量配置下Options，例如：inSameSize
+
+2
+
+.Bitmap使用完以后，调用 bitmap.recycle()来释放内存
+
+ 
+3
+
+.如果应用是基于图片的应用，尽量采用LazyLoad和DymanicRecycle
+
+ 	
+4.decode bitmap 的时候，将decode代码 try catch 出来，catch oom error，避免程序crash，可以在catch里面做一些释放内存操作
+
+       
+                 关于Android的Native内存和Dalvik内存
+1. Dalvik内存
+每一个Android应用在底层都会对应一个独立的Dalvik虚拟机实例，其代码在虚拟机的解释下得以执行。
+很多人认为Dalvik虚拟机是一个Java虚拟机，因为Android的编程语言恰恰就是Java语言。但是这种说法并不准确，因为 Dalvik虚拟机并不是按照Java虚拟机的规范来实现的，两者并不兼容；
+同时还要两个明显的不同：
+   1.Java虚拟机运行的是Java字节码，而Dalvik虚拟机运行的则是其专有的文件格式DEX（Dalvik Executable）。
+2.在Java SE程序中的Java类会被编译成一个或者多个字节码文件（.class）然后打包到JAR文件，而后Java虚拟机会从相应的CLASS文件和JAR文件中获取相应的字节码；Android应用虽然也是使用Java语言进行编程，但是在编译成CLASS文件后，还会通过一个工具（dx）将应用所有的 CLASS文件转换成一个DEX文件，而后Dalvik虚拟机会从其中读取指令和数据。
+ 
+Dalvik虚拟机的简介：
+Dalvik虚拟机主要是完成对象生命周期的管理，堆栈的管理，线程管理，安全和异常的管理，以及垃圾回收等等重要功能。
+   Dalvik虚拟机的主要特征Dalvik 虚拟机非常适合在移动终端上使用，相对于在桌面系统和服务器系统运行的虚拟机而言，它不需要很快的CPU速度和大量的内存空间。
+Dalvik虚拟机有如下几个主要特征:
+1.专有的DEX文件格式
+DEX是Dalvik虚拟机专用的文件格式，而问什么弃用已有的字节码文件（CLASS文件）而采用新的格式呢?一个应用中会定义很多类，编译完成后即会有很多相应的CLASS文件，CLASS文件间会有不少冗余的信息；而DEX文件格式会把所有的 CLASS文件内容整合到一个文件中。这样，除了减少整体的文件尺寸，I/O操作，也提高了类的查找速度。
+2.增加了新的操作码的支
+3.文件结构尽量简洁，使用等长的指令，借以提高解析速度
+4. 尽量扩大只读结构的大小，借以提高跨进程的数据共享
+2. Native内存
+ 
+ 
+如何修改Android应用程序的默认最大内存值
+Android应用程序的默认最大内存值为16M，有些应用程序可能会出现内存溢出，譬如ERROR/AndroidRuntime(264): java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+除了要检查修正代码之外，还可以考虑修改Android应用程序的默认最大内存值。
+修改应用程序的默认最大内存有2种方法：
+1、修改代码，适用于自己编译烧机：
+当应用程序分配内存时，会调用到dalvik/vm/alloc/HeapSource.c中的 dvmTrackExternalAllocation()方法，继而调用到externalAllocPossible()方法，该方法要求当前堆已使用的大小(由currentHeapSize和hs->externalBytesAllocated构成)加上我们需要再次分配的内存大小不能超过堆的最大内存值，如果超过就会报错。 
+有两个地方决定了一个堆的最大内存： 
+1）dalvik/vm/Init.c中的 
+gDvm.heapSizeMax = 16 * 1024 * 1024;    // Spec says 75% physical mem 
+2）frameworks/base/core/jni/AndroidRuntime.cpp中的 
+property_get("dalvik.vm.heapsize", heapsizeOptsBuf+4, "16m"); 
+因此解决办法就是将以上2点中默认的16M改大一点，譬如32M。
+2、修改配置文件，适用于烧机后的版本。
+修改或添加/system/build.prop中的配置项： 
+dalvik.vm.heapstartsize=20m
+dalvik.vm.heapgrowthlimit=200m
+dalvik.vm.heapsize=320m

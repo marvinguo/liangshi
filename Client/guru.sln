@@ -1,0 +1,39 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "guru", "src\guru\guru.vcxproj", "{C93C9009-3E06-4572-B58F-784CC495D7BE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hera", "src\hera\hera.vcxproj", "{356E63B5-AC04-469C-A716-2B5C8D010F49}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "quazip", "library\quazip\quazip\quazip.vcxproj", "{5B24853E-41DA-3B8C-B242-692F25108329}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MessagePack", "..\SharedCode\Data\MessagePack\msgpack_vc10.vcxproj", "{122A2EA4-B283-4241-9655-786DE78283B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C93C9009-3E06-4572-B58F-784CC495D7BE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C93C9009-3E06-4572-B58F-784CC495D7BE}.Debug|Win32.Build.0 = Debug|Win32
+		{C93C9009-3E06-4572-B58F-784CC495D7BE}.Release|Win32.ActiveCfg = Release|Win32
+		{C93C9009-3E06-4572-B58F-784CC495D7BE}.Release|Win32.Build.0 = Release|Win32
+		{356E63B5-AC04-469C-A716-2B5C8D010F49}.Debug|Win32.ActiveCfg = Debug|Win32
+		{356E63B5-AC04-469C-A716-2B5C8D010F49}.Debug|Win32.Build.0 = Debug|Win32
+		{356E63B5-AC04-469C-A716-2B5C8D010F49}.Release|Win32.ActiveCfg = Release|Win32
+		{356E63B5-AC04-469C-A716-2B5C8D010F49}.Release|Win32.Build.0 = Release|Win32
+		{5B24853E-41DA-3B8C-B242-692F25108329}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5B24853E-41DA-3B8C-B242-692F25108329}.Debug|Win32.Build.0 = Debug|Win32
+		{5B24853E-41DA-3B8C-B242-692F25108329}.Release|Win32.ActiveCfg = Release|Win32
+		{5B24853E-41DA-3B8C-B242-692F25108329}.Release|Win32.Build.0 = Release|Win32
+		{122A2EA4-B283-4241-9655-786DE78283B2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{122A2EA4-B283-4241-9655-786DE78283B2}.Debug|Win32.Build.0 = Debug|Win32
+		{122A2EA4-B283-4241-9655-786DE78283B2}.Release|Win32.ActiveCfg = Release|Win32
+		{122A2EA4-B283-4241-9655-786DE78283B2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+# create and modified by Marvin
+
+{
+  'targets': [
+    {
+      'target_name': 'uvbook',
+      'type': 'none',
+      'dependencies': [
+        './code/cgi/cgi.gyp:*',
+        './code/detach/detach.gyp:*',
+        './code/dns/dns.gyp:*',
+        './code/helloworld/helloworld.gyp:*',
+        './code/idle-basic/idle-basic.gyp:*',
+        './code/idle-compute/idle-compute.gyp:*',
+        './code/interfaces/interfaces.gyp:*',
+        './code/locks/locks.gyp:*',
+        './code/multi-echo-server/multi-echo-server.gyp:*',
+        './code/onchange/onchange.gyp:*',
+        './code/pipe-echo-server/pipe-echo-server.gyp:*',
+        './code/plugin/plugin.gyp:*',
+        './code/proc-streams/proc-streams.gyp:*',
+        './code/progress/progress.gyp:*',
+        './code/queue-cancel/queue-cancel.gyp:*',
+        './code/queue-work/queue-work.gyp:*',
+        './code/ref-timer/ref-timer.gyp:*',
+        './code/signal/signal.gyp:*',
+        './code/spawn/spawn.gyp:*',
+        './code/tcp-echo-server/tcp-echo-server.gyp:*',
+        './code/thread-create/thread-create.gyp:*',
+        './code/tty/tty.gyp:*',
+        './code/tty-gravity/tty-gravity.gyp:*',
+        './code/udp-dhcp/udp-dhcp.gyp:*',
+        './code/uvcat/uvcat.gyp:*',
+        './code/uvstop/uvstop.gyp:*',
+        './code/uvtee/uvtee.gyp:*',
+        './code/uvwget/uvwget.gyp:*',
+      ],
+    },
+  ],
+}

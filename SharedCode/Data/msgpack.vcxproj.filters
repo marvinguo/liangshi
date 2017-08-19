@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MessagePack">
+      <UniqueIdentifier>{D703304D-C8FE-2AD6-1ECC-D8E9C9EB052E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessagePack\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessagePack">
+      <UniqueIdentifier>{D703304D-C8FE-2AD6-1ECC-D8E9C9EB052E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessagePack\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessagePack">
+      <UniqueIdentifier>{D703304D-C8FE-2AD6-1ECC-D8E9C9EB052E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessagePack\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessagePack">
+      <UniqueIdentifier>{D703304D-C8FE-2AD6-1ECC-D8E9C9EB052E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessagePack\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessagePack">
+      <UniqueIdentifier>{D703304D-C8FE-2AD6-1ECC-D8E9C9EB052E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessagePack\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MessagePack\src\object.cc">
+      <Filter>MessagePack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MessagePack\src\unpack.cc">
+      <Filter>MessagePack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MessagePack\src\version.cc">
+      <Filter>MessagePack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MessagePack\src\vrefbuffer.cc">
+      <Filter>MessagePack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MessagePack\src\zone.cc">
+      <Filter>MessagePack\src</Filter>
+    </ClCompile>
+    <None Include="data.gyp"/>
+  </ItemGroup>
+</Project>

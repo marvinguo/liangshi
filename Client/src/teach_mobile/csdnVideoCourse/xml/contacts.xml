@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contacts count='3'>
+  <people name='张三'>
+    <mobile>18088888888</mobile>
+  </people>
+  <people name='罗贯中'>
+    <mobile>15399999999</mobile>
+  </people>
+  <people name='蓝翔'>
+    <mobile>13944444444</mobile>
+  </people>  
+</videos>

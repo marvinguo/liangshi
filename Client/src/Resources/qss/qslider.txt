@@ -1,0 +1,58 @@
+http://blog.csdn.net/liukang325/article/details/44850927
+
+musicSlider->setStyleSheet("  \
+     QSlider::add-page:Horizontal\
+     {     \
+        background-color: rgb(87, 97, 106);\
+        height:4px;\
+     }\
+     QSlider::sub-page:Horizontal \
+    {\
+        background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(231,80,229, 255), stop:1 rgba(7,208,255, 255));\
+        height:4px;\
+     }\
+    QSlider::groove:Horizontal \
+    {\
+        background:transparent;\
+        height:6px;\
+    }\
+    QSlider::handle:Horizontal \
+    {\
+        height: 30px;\
+        width:8px;\
+        border-image: url(:/images/ic_music_thumb.png);\
+        margin: -8 0px; \
+    }\
+    ");
+	
+	volumeSlider->setStyleSheet("  \
+    QSlider\
+    {\
+        background-color: rgb(25, 38, 58);\
+        min-width:5px;\
+        max-width:5px;\
+        border:15px solid rgb(25, 38, 58);\
+    }\
+     QSlider::add-page:vertical\
+     {     \
+        background-color: rgb(37, 168, 198);\
+        width:4px;\
+     }\
+     QSlider::sub-page:vertical \
+    {\
+        background-color: rgb(87, 97, 106);\
+        width:4px;\
+     }\
+    QSlider::groove:vertical \
+    {\
+        background:transparent;\
+        width:6px;\
+    }\
+    QSlider::handle:vertical \
+    {\
+         height: 13px;\
+        width:13px;\
+        border-image: url(:/images/ic_volume_thumb.png);\
+         margin: -0 -4px; \
+     }\
+    ");

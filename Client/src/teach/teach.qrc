@@ -1,0 +1,9 @@
+<RCC>
+    <qresource>
+      <file>../Resources/Images/background.jpg</file>
+      <file>../Resources/Images/loginBackground.jpg</file>
+      <file>../Resources/Images/teachBackground.jpg</file>
+      <file>../Resources/AppIcons/teach.png</file>
+      <file>../Resources/Avatars/128.bmp</file>
+    </qresource>
+</RCC>

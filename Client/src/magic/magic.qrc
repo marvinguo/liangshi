@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/App">
+    <file alias="magic">../Resources/AppIcons/magic.png</file>
+  </qresource>
+</RCC>

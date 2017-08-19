@@ -1,0 +1,14 @@
+libuv有thread,这库太强了，
+
+1. socket data, signal to thread to databaseEngine to handle
+2. database Engine need to connect mysql, singleton
+
+
+4个函数
+htons
+htonl
+
+ntohs
+ntohl
+
+ ./configure –prefix=/usr

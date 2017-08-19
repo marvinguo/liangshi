@@ -1,0 +1,62 @@
+//from origin post
+stunserver.org 
+stun.xten.com 
+stun.fwdnet.net 
+stun.fwdnet.net:3478
+
+stun.wirlab.net
+stun01.sipphone.com
+
+stun.iptel.org
+stun.ekiga.net
+stun.fwdnet.net 
+stun01.sipphone.com (no DNS SRV record) 
+stun.softjoys.com (no DNS SRV record) 
+stun.voipbuster.com (no DNS SRV record) 
+stun.voxgratia.org (no DNS SRV record)
+stun.xten.com
+stunserver.org
+stun.sipgate.net:10000
+stun.softjoys.com:3478
+
+//from https://gist.github.com/zziuni/3741933
+# source : http://code.google.com/p/natvpn/source/browse/trunk/stun_server_list
+# A list of available STUN server.
+ 
+stun.l.google.com:19302
+stun1.l.google.com:19302
+stun2.l.google.com:19302
+stun3.l.google.com:19302
+stun4.l.google.com:19302
+stun01.sipphone.com
+stun.ekiga.net
+stun.fwdnet.net
+stun.ideasip.com
+stun.iptel.org
+stun.rixtelecom.se
+stun.schlund.de
+stunserver.org
+stun.softjoys.com
+stun.voiparound.com
+stun.voipbuster.com
+stun.voipstunt.com
+stun.voxgratia.org
+stun.xten.com
+
+这个过程可概括如下:
+1, STUN客户端向STUN服务器发送请求,要求得到自身经NAT映射后的地址:
+a,收不到服务器回复,则认为UDP被防火墙阻断,不能通信,网络类型:Blocked.
+b,收到服务器回复,对比本地地址,如果相同,则认为无NAT设备,进入第2步,否则认为有NAT设备,进入3步.
+2, (已确认无NAT设备)STUN客户端向STUN服务器发送请求,要求服务器从其他IP和PORT向客户端回复包:
+a,收不到服务器从其他IP地址的回复,认为包被前置防火墙阻断,网络类型:Symmetric UDP Firewall.
+b,收到则认为客户端处在一个开放的网络上,网络类型:Opened.
+3, (已确认存在NAT设备)STUN客户端向STUN服务器发送请求,要求服务器从其他IP和PORT向客户端回复包:
+a,收不到服务器从其他IP地址的回复,认为包被前置NAT设备阻断,进入第4步.
+b,收到则认为NAT设备类型为Full Cone,即网络类型:Full Cone NAT.
+4, STUN客户端向STUN服务器的另外一个IP地址发送请求,要求得到自身经NAT映射后的地址,并对比之:
+a,地址不相同,则网络类型:Symmetric NAT.
+b,相同则认为是Restricted NAT,进入第5步,进一步确认类型.
+5, (已确认Restricted NAT设备)STUN客户端向STUN服务器发送请求,要求服务器从相同IP的其他PORT向客户端回复包:
+a,收不到服务器从其他PORT地址的回复,认为包被前置NAT设备阻断,网络类型:Port Restricted cone NAT.
+b,收到则认为网络类型: Restricted cone NAT.
+说完了原理,再来说说,做这 个是因为有东西用到了P2P通信,但找不到合适的STUN的实 现,因而自己做了一个,用法很简单,本身就是一个实例,直接运行该,它会告诉你目前主机所处网络的类型及出口 IP/PORT.

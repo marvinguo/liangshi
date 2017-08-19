@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="/App">
+    <file alias="collect">../Resources/AppIcons/collect.png</file>
+  </qresource>
+  <qresource prefix="/Buttons">
+    <file alias="material">../Resources/Buttons/material.png</file>
+    <file alias="script">../Resources/Buttons/script.png</file>
+    <file alias="ke">../Resources/Buttons/ke.png</file>
+    <file alias="open">../Resources/Buttons/open.png</file>
+    <file alias="quit">../Resources/Buttons/quit.png</file>
+  </qresource>
+  <qresource prefix="/qss">
+    <file alias="default">../Resources/qss/default.qss</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,5 @@
+//目前需要搞定app icon
+ #define      IDI_ICON1       1001
+ #define      IDI_ICON2       1002
+IDI_ICON1               ICON    DISCARDABLE     "../Resources/AppIcons/collect.ico"
+IDI_ICON2               ICON    DISCARDABLE     "../Resources/AppIcons/collect_qi.ico"

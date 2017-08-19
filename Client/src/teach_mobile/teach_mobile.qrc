@@ -1,0 +1,44 @@
+<RCC>
+<!--
+  <qresource prefix="/qml">
+    <file alias="main">qml/main.qml</file>
+    <file>qml/controls/Button.qml</file>
+    <file>qml/controls/Checkbox.qml</file>
+    <file>qml/controls/Slider.qml</file>
+  </qresource>
+-->
+  <qresource prefix="/App">
+    <file alias="mobile">../Resources/AppIcons/mobile.png</file>
+    <file alias="background">../Resources/Images/teachBackground_new.jpg</file>
+  </qresource>
+  <qresource prefix="/Cursor">
+    <file alias="draw">../Resources/Cursors/draw.png</file>
+    <file alias="line">../Resources/Cursors/line.png</file>
+    <file alias="rect">../Resources/Cursors/rect.png</file>
+    <file alias="pRect">../Resources/Cursors/perfectRect.png</file>
+    <file alias="ellipse">../Resources/Cursors/ellipse.png</file>
+    <file alias="pEllipse">../Resources/Cursors/perfectEllipse.png</file>
+  </qresource>
+  <qresource prefix="/Icons">
+    <file alias="open">../Resources/Icons/open.png</file>
+    <file alias="save">../Resources/Icons/save.png</file>
+    <file alias="saveas">../Resources/Icons/saveas.png</file>
+    <file alias="play">../Resources/Icons/play.png</file>
+    <file alias="pause">../Resources/Icons/pause.png</file>
+    <file alias="run">../Resources/Icons/run.png</file>
+    <file alias="debug">../Resources/Icons/debug.png</file>
+  </qresource>
+  <qresource prefix="/System">
+    <file alias="close">../Resources/Images/System/close.png</file>
+    <file alias="max">../Resources/Images/System/max.png</file>
+    <file alias="min">../Resources/Images/System/min.png</file>
+  </qresource>
+  <qresource prefix="/qss">
+    <file alias="mobile">../Resources/qss/mobile.qss</file>
+    <file alias="1downarrow.png">../Resources/qss/1downarrow.png</file>
+    <file alias="progress_handle2.png">../Resources/qss/progress_handle2.png</file>
+  </qresource>
+  <qresource prefix="/qm">
+    <file alias="cn">../../Win32/Release/translations/qt_zh_CN.qm</file>
+  </qresource>
+</RCC>

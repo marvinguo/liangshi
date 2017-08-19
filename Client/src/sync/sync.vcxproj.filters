@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{63344694-a466-4e3b-a20b-58b2eeb58592}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{b211df44-c88d-42b2-b9e2-b39a416377d5}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Main Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{e2649d39-9c89-4327-b6ad-901df6613b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{d273c4f1-ebdc-4da9-826a-446cd371f13d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LokiShared">
+      <UniqueIdentifier>{f3e4f410-e625-4728-aecf-e60435bfe7ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SyncMenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SyncMenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncMenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_sync.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SocketClient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SocketClient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\SocketServer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SocketServer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SocketServer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\SocketClient.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncWidget.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SyncWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SyncWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindowMenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindowMenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindowMenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\LokiBuffer.cpp">
+      <Filter>LokiShared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\TyrProtocol.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TyrProtocol.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TyrProtocol.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\TyrCommand.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ThorProtocol.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ThorProtocol.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ThorServer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ThorServer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ThorServer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ThorClient.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ThorClient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ThorClient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ThorProtocol.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MainWindow.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\Menu.h">
+      <Filter>Menu</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SyncMenu.h">
+      <Filter>Menu</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sync.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\SocketClient.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\SocketServer.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SyncWidget.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainWindowMenu.h">
+      <Filter>Menu</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\TyrProtocol.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\ThorProtocol.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\ThorServer.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\ThorClient.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\common\common_win32.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="sync.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\SharedCode\LokiBuffer.h">
+      <Filter>LokiShared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\TyrCommand.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

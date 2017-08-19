@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/App">
+    <file alias="live">../Resources/AppIcons/live.png</file>
+  </qresource>
+</RCC>

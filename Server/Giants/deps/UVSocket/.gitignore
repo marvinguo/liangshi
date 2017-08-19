@@ -1,0 +1,9 @@
+*.opendb
+*.lastbuildstate
+*.tlog
+*.idb
+*.sdf
+*.iobj
+*.ipdb
+publish/
+VSBuild/

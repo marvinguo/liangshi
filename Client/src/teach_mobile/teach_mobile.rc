@@ -1,0 +1,2 @@
+ #define      IDI_ICON1       1001
+IDI_ICON1               ICON    DISCARDABLE     "../Resources/AppIcons/mobile.ico"

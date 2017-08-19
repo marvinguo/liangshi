@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/App">
+    <file alias="guru">../Resources/AppIcons/guru.png</file>
+  </qresource>
+</RCC>

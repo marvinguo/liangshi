@@ -1,0 +1,8 @@
+ln -s /usr/lib64/libmysqlcppconn.so.6.1.1.2 /usr/lib64/libmysqlcppconn.so.6
+ln -s /usr/lib64/mysql/libmysqlclient.so.18 /usr/lib64/libmysqlclient.so.18
+
+sudo ln -s /alidata/turn/libevent_core-2.0.so.5.1.9 /usr/lib64/libevent_core-2.0.so.5
+sudo ln -s /alidata/turn/libevent_extra-2.0.so.5.1.9 /usr/lib64/libevent_extra-2.0.so.5
+sudo ln -s /alidata/turn/libevent_openssl-2.0.so.5.1.9 /usr/lib64/libevent_openssl-2.0.so.5
+sudo ln -s /alidata/turn/libevent_pthreads-2.0.so.5.1.9 /usr/lib64/libevent_pthreads-2.0.so.5
+

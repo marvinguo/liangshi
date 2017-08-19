@@ -1,0 +1,24 @@
+$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/arm-linux-androideabi-strip --strip-debug -x
+
+android没有ldd
+$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/arm-linux-androideabi-readelf -d
+
+这个可以调试了
+set solib-search-path
+out/Debug/lib
+
+objdump --syms ... | grep debug
+
+readelf -p .debug_str  exe_or_so_file 
+
+objcopy --only-keep-debug projectD projectsymbol.dbg
+
+set solib-absolute-prefix /home/marvin/Desktop/Google/Audio_android/deps/webrtc/trunk/out/Debug/lib
+
+ndk-build NDK-DEBUG=1 -j4
+
+#include <android/log.h>
+
+int  first(int  x, int  y)
+{
+ __android_log_print(ANDROID_LOG_INFO, "MYPROG", "x = %d, y =%d", x,y);

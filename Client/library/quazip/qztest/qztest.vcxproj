@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{54E2755E-0F84-3263-9CF0-B4FAEBDB86C7}</ProjectGuid>
+    <RootNamespace>qztest</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>.obj\</IntermediateDirectory>
+    <PrimaryOutput>qztest</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>.obj\</IntermediateDirectory>
+    <PrimaryOutput>qztest</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qztest</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qztest</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>".";"..\..\quazip";"V:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include";"V:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest";"V:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore";".moc";V:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>.obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;NOMINMAX;QT_NO_DEBUG;QT_TESTLIB_LIB;QT_CORE_LIB;QT_TESTCASE_BUILDDIR="S:/Code/Fun1/Client/library/quazip/qztest";NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>quazip.lib;$(QTDIR)\lib\Qt5Test.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;S:\Code\Fun1\Client\library\quazip\qztest\..\quazip\release\;V:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\qztest.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;NOMINMAX;QT_NO_DEBUG;QT_TESTLIB_LIB;QT_CORE_LIB;QT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>".";"..\..\quazip";"V:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include";"V:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest";"V:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore";".moc";V:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>.obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;NOMINMAX;QT_TESTLIB_LIB;QT_CORE_LIB;QT_TESTCASE_BUILDDIR="S:/Code/Fun1/Client/library/quazip/qztest";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>S:\Code\Fun1\Client\library\quazip\qztest\..\quazip\debug\\quazip.lib;$(QTDIR)\lib\Qt5Testd.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;S:\Code\Fun1\Client\library\quazip\qztest\..\quazip\debug\;V:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\qztest.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;NOMINMAX;QT_TESTLIB_LIB;QT_CORE_LIB;QT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\";_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include=".moc\moc_testjlcompress.cpp" />
+    <ClCompile Include=".moc\moc_testquachecksum32.cpp" />
+    <ClCompile Include=".moc\moc_testquagzipfile.cpp" />
+    <ClCompile Include=".moc\moc_testquaziodevice.cpp" />
+    <ClCompile Include=".moc\moc_testquazip.cpp" />
+    <ClCompile Include=".moc\moc_testquazipdir.cpp" />
+    <ClCompile Include=".moc\moc_testquazipfile.cpp" />
+    <ClCompile Include="qztest.cpp" />
+    <ClCompile Include="testjlcompress.cpp" />
+    <ClCompile Include="testquachecksum32.cpp" />
+    <ClCompile Include="testquagzipfile.cpp" />
+    <ClCompile Include="testquaziodevice.cpp" />
+    <ClCompile Include="testquazip.cpp" />
+    <ClCompile Include="testquazipdir.cpp" />
+    <ClCompile Include="testquazipfile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qztest.h" />
+    <CustomBuild Include="testjlcompress.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" -DNDEBUG "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing testjlcompress.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing testjlcompress.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="testquachecksum32.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" -DNDEBUG "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing testquachecksum32.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing testquachecksum32.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="testquagzipfile.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" -DNDEBUG "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing testquagzipfile.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing testquagzipfile.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="testquaziodevice.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" -DNDEBUG "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing testquaziodevice.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing testquaziodevice.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="testquazip.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" -DNDEBUG "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing testquazip.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing testquazip.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="testquazipdir.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" -DNDEBUG "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing testquazipdir.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing testquazipdir.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="testquazipfile.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_NO_DEBUG -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" -DNDEBUG "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing testquazipfile.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\.moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DNOMINMAX -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR=\"S:/Code/Fun1/Client/library/quazip/qztest\" "-I." "-I.\..\..\quazip" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtTest" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\include\QtCore" "-I.\.moc" "-IV:\Library\QT\5.1.0\msvc2010_opengl\5.1.0-beta1\msvc2010_opengl\mkspecs\win32-msvc2010"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing testquazipfile.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\.moc\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\quazip\quazip.vcxproj">
+      <Project>{5b24853e-41da-3b8c-b242-692f25108329}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Qt5Version_x0020_Win32="msvc2010_opengl" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

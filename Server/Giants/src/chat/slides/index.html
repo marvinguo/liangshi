@@ -1,0 +1,309 @@
+<!doctype html>  
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>libuv</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="hl/styles/github.css">
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    .small {
+      font-size: 50% !important;
+    }
+    .smallish {
+      font-size: 75% !important;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h1>libuv</h1>
+          <h3>the little library that could</h3>
+          <h4>or:</h4>
+          <h3>doing chat apps the hard way since 2011</h3>
+          <hr>
+          <a href='https://github.com/joyent/libuv'>
+            https://github.com/joyent/libuv
+          </a>
+          <br>
+          <br>
+          <a href='https://github.com/bnoordhuis/libuv-chat'>
+            https://github.com/bnoordhuis/libuv-chat
+          </a>
+        </section>
+
+        <section>
+          <h2>what is libuv?</h2>
+          <ul>
+            <li>async network and file I/O</li>
+            <li>cross-platform</li>
+            <li>written in C</li>
+            <li>smallish, ±40K lines of code</li>
+            <li>supports epoll, kqueue, event ports, IOCP</li>
+          </ul>
+          <aside class='notes'>
+          * platforms: Windows, Linux, OS X, Solaris, FreeBSD, OpenBSD, NetBSD,
+            DragonFlyBSD - still working on the MINIX and Plan9 ports.
+
+          * C for portability, ease of writing bindings
+          </aside>
+        </section>
+
+        <section>
+          <h2>who uses libuv?</h2>
+          <ul>
+            <li>node.js - <a href='http://nodejs.org/'>http://nodejs.org/</a></li>
+            <li>luvit - <a href='http://luvit.io/'>http://luvit.io/</a></li>
+            <li>rust - <a href='http://www.rust-lang.org/'>http://www.rust-lang.org/</a></li>
+            <li>julia - <a href='http://julialang.org/'>http://julialang.org/</a></li>
+            <li>and more...</li>
+          </ul>
+          <hr>
+          <a href='https://github.com/joyent/libuv/wiki/Projects-that-use-libuv'>
+            https://github.com/joyent/libuv/wiki/Projects-that-use-libuv
+          </a>
+        </section>
+
+        <section>
+          <h2>my first chat app</h2>
+          build:
+<pre><code>
+$ git clone git://github.com/bnoordhuis/libuv-chat.git
+$ cd libuv-chat
+$ make
+</code></pre>
+
+          run:
+<pre><code>
+$ ./chat-server
+Listening at 0.0.0.0:8000
+</code></pre>
+
+          use:
+<pre><code>
+$ netcat 127.0.0.1 8000
+* Madison Noah joined from 127.0.0.1:50668
+hello?
+Madison Noah said: hello?
+Mason Ava said: howdy, handsome stranger
+</code></pre>
+        </section>
+
+        <section>
+          <h3>layout</h3>
+<pre><code>
+$ ls .
+deps/           src/              Makefile    build.gyp
+
+$ ls src/
+main.c
+
+$ ls deps/uv/
+uv.gyp          config-mingw.mk   gyp_uv      config-unix.mk
+LICENSE         include           test/       vcbuild.bat
+AUTHORS         src/              Makefile    README.md
+</code></pre>
+        </section>
+
+        <section>
+          <h3>Makefile</h3>
+<!-- intentionally swapped around to fool the syntax highlighter -->
+<code><pre style='color:#000;background:#f8f8ff'>
+CFLAGS = -Ideps/uv/include -Wall -Wextra -Wno-unused-parameter
+LDFLAGS = -lm
+
+ifeq ($(shell uname),Darwin)
+LDFLAGS += -framework CoreServices
+endif
+
+ifeq ($(shell uname),Linux)
+LDFLAGS += -lrt
+endif
+
+.PHONY:  all clean
+
+all:  chat-server
+
+clean:
+  rm -f chat-server src/main.o
+  $(MAKE) $@ -C deps/uv
+
+chat-server:  src/main.o deps/uv/libuv.a
+  $(CC) $^ -o $@ $(LDFLAGS)
+
+deps/uv/libuv.a:
+  $(MAKE) all -C deps/uv
+</pre></code>
+        </section>
+
+        <section>
+          <h3>GYP</h3>
+<pre><code class='python'>
+{
+  'targets': [
+    {
+      'target_name': 'chat-server',
+      'type': 'executable',
+      'dependencies': ['deps/uv/uv.gyp:libuv'],
+      'sources': ['src/main.c'],
+    }
+  ]
+}
+</code></pre>
+<pre><code>
+$ gyp -Dlibrary=static_library --depth=$PWD -f make build.gyp
+$ make
+</code></pre>
+          <div>
+            GYP = Generate Your Projects
+          </div>
+          <div class='smallish'>
+            xcode, msvs, eclipse, scons, ninja, make
+          </div>
+          <a href='http://code.google.com/p/gyp/'>
+            http://code.google.com/p/gyp/
+          </a>
+        </section>
+
+        <section>
+          <h3>main()</h3>
+<pre><code>
+// ...
+uv_tcp_init(uv_default_loop(), &server_handle);
+
+// ...
+uv_tcp_bind(&server_handle, uv_ip4_addr("0.0.0.0", 8000));
+
+// ...
+uv_listen((uv_stream_t*) &server_handle, backlog, on_connection);
+
+// ...
+uv_run(uv_default_loop());
+</code></pre>
+        </section>
+
+        <section>
+          <h3>on_connection()</h3>
+<pre><code>
+// ...
+struct user *user = malloc(sizeof(*user));
+uv_tcp_init(uv_default_loop(), &user->handle);
+
+// ...
+uv_accept(server_handle, (uv_stream_t*) &user->handle);
+
+// ...
+uv_read_start((uv_stream_t*) &user->handle, on_alloc, on_read);
+
+// ...
+broadcast("* %s joined from %s\n", user->id, addr_and_port(user));
+</code></pre>
+        </section>
+
+        <section>
+          <h3>on_read()</h3>
+<pre><code>
+// ...
+if (nread == -1) {
+  uv_close((uv_handle_t*) &user->handle, on_close);
+  broadcast("* %s has left the building\n", user->id);
+  return;
+}
+
+// ...
+broadcast("%s said: %.*s", user->id, (int) nread, buf.base);
+</code></pre>
+        </section>
+
+        <section>
+          <h3>broadcast()</h3>
+<pre><code>
+static void broadcast(const char *fmt, ...)
+{
+  ngx_queue_t *q;
+  char msg[512];
+  va_list ap;
+
+  va_start(ap, fmt);
+  vsnprintf(msg, sizeof(msg), fmt, ap);
+  va_end(ap);
+
+  ngx_queue_foreach(q, &users) {
+    struct user *user = container_of(q, struct user, queue);
+    unicast(user, msg);
+  }
+}
+</code></pre>
+        </section>
+
+
+        <section>
+          <h3>unicast()</h3>
+<pre><code>
+static void unicast(struct user *user, const char *msg)
+{
+  uv_write_t *req = malloc(sizeof(*req));
+  uv_buf_t buf = uv_buf_init(strdup(msg), strlen(msg));
+  uv_write(req, (uv_stream_t*) &user->handle, &buf, 1, on_write);
+  req->data = buf.base; // save pointer for later
+}
+</code></pre>
+        </section>
+
+        <section>
+          <h3>on_write()</h3>
+<pre><code>
+static void on_write(uv_write_t *req, int status)
+{
+  free(req->data);
+  free(req);
+}
+</code></pre>
+        </section>
+
+        <section>
+          <h1>the end</h1>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        theme: 'default',
+        transition: 'default',
+        dependencies: [
+          { src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/zoom-js/zoom.js', condition: function() { return !!document.body.classList; } },
+          { src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+          { src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } }
+        ]
+      });
+    </script>
+
+  </body>
+</html>

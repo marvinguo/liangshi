@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "collect", "collect.vcxproj", "{04C90454-25A7-4CAA-81D8-21DECF73AE3E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hera", "..\hera\hera.vcxproj", "{356E63B5-AC04-469C-A716-2B5C8D010F49}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vectorLib", "..\..\library\vectorLib\vectorLib.vcxproj", "{A8B36A0A-3D2C-412A-94E3-248A8E3087A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04C90454-25A7-4CAA-81D8-21DECF73AE3E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{04C90454-25A7-4CAA-81D8-21DECF73AE3E}.Debug|Win32.Build.0 = Debug|Win32
+		{04C90454-25A7-4CAA-81D8-21DECF73AE3E}.Release|Win32.ActiveCfg = Release|Win32
+		{04C90454-25A7-4CAA-81D8-21DECF73AE3E}.Release|Win32.Build.0 = Release|Win32
+		{356E63B5-AC04-469C-A716-2B5C8D010F49}.Debug|Win32.ActiveCfg = Debug|Win32
+		{356E63B5-AC04-469C-A716-2B5C8D010F49}.Debug|Win32.Build.0 = Debug|Win32
+		{356E63B5-AC04-469C-A716-2B5C8D010F49}.Release|Win32.ActiveCfg = Release|Win32
+		{356E63B5-AC04-469C-A716-2B5C8D010F49}.Release|Win32.Build.0 = Release|Win32
+		{A8B36A0A-3D2C-412A-94E3-248A8E3087A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A8B36A0A-3D2C-412A-94E3-248A8E3087A0}.Debug|Win32.Build.0 = Debug|Win32
+		{A8B36A0A-3D2C-412A-94E3-248A8E3087A0}.Release|Win32.ActiveCfg = Release|Win32
+		{A8B36A0A-3D2C-412A-94E3-248A8E3087A0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

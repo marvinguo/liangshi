@@ -1,0 +1,190 @@
+ScCheckableButton{
+    background-color:#eeeeee;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-width: 9ex;
+    min-height: 2.5ex;
+}
+
+ScCheckableButton:hover {
+    background-color: khaki;
+    border-color: #AF50B7;
+}
+
+ScCheckableButton:checked {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: #32CC32;
+}
+
+MetroButton {
+    border-radius: 2;
+    border-width: 2px;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: bold;
+    background: transparent;
+    color: black;
+}
+
+MetroButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #A951BC, stop: 0.4 #010101,stop: 0.5 #000101, stop: 1.0 #9432C1);
+    border-color: #4D90FE;
+}
+
+TitleButton {
+    background-color: #eeeeee;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-width: 9ex;
+    min-height: 2.5ex;
+}
+
+TitleButton:hover {
+    background-color: khaki;
+    border-color: #AF50B7;
+}
+
+TitleButton:checked {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: #32CC32;
+}
+
+TitleCheckBox{
+    background-color: #eeeeee;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+}
+
+TitleComboBox{
+    background-color: #eeeeee;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+}
+
+TitleComboBox:hover {
+    background-color: khaki;
+    border-color: #AF50B7;
+}
+
+ TitleComboBox::down-arrow {
+     image: url(:/qss/1downarrow.png);
+ }
+
+TextElementHelper, ImageElementHelper, ScElementHelper{
+    border : 2px solid yellow;
+/*
+    padding : 0px;
+    padding-top : 0px;
+    margin:0px;
+    list-style:none;
+    text-indent:0;
+*/
+}
+
+HtmlTextElementHelper{
+    border : 2px solid white;
+/*
+    padding : 0px;
+    padding-top : 0px;
+    margin:0px;
+    list-style:none;
+    text-indent:0;
+*/
+}
+
+ AudioVolumeIndicator {
+     text-align: center;
+ }
+
+ AudioVolumeIndicator::chunk {
+     background-color: #CD96CD;
+     width: 10px;
+ }
+ 
+PlayerProgressBar {
+  min-width: 400;
+ }
+
+PlayerProgressBar::add-page:Horizontal {
+  background-color: rgb(87, 97, 106);
+  height:4px;
+}
+
+PlayerProgressBar::sub-page:Horizontal {
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(231,80,229, 255), stop:1 rgba(7,208,255, 255));
+	height:4px;
+}
+ 
+PlayerProgressBar::groove:horizontal {
+/*
+     border: 1px solid #999999;
+     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+     margin: 2px 0;
+*/
+  background:transparent;
+  height:6px;
+ }
+
+ PlayerProgressBar::handle:horizontal {
+/*     background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #b4b4b4, stop:1 #8f8f8f);  
+     border: 1px solid #5c5c5c;
+     margin: -2px 0;
+     border-radius: 3px;
+*/
+  height: 30px;
+  width:8px;
+  border-image: url(:/qss/progress_handle1.png);
+  margin: -8 0px;
+ }
+
+/*
+ScCategoryList, ScList{
+    show-decoration-selected: 1;
+    background-color: #5E3D90;
+}
+*/
+
+/*
+ScCategoryList::item{
+    height:30px;
+}
+*/
+
+/*
+ScCategoryList::item:hover {
+    background-color: wheat;
+}
+*/
+
+QListView {
+    show-decoration-selected: 1;
+}
+
+QListView::item:hover {
+    background-color: wheat;
+}
+
+QToolTip {
+    border: 1px solid darkkhaki;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 200;
+    background-color: #F7FF19;
+    font-style: bold;
+    color: #090909;
+}
+

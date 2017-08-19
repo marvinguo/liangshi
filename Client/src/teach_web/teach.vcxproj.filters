@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{5c7ffcb3-a0bf-4e97-a92e-ff3c3f2f782b}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{95061d42-204f-48a1-ac41-0c2d7a18b815}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Main Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{77bc779d-0d2e-4190-b579-dec64eb5af23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Piemenu">
+      <UniqueIdentifier>{e523dcbc-950a-4a96-9fdc-30d3aedea516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MsgPack">
+      <UniqueIdentifier>{12dee9d9-8370-4d34-bb55-415b01863aec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vector">
+      <UniqueIdentifier>{c1dd249c-0697-452b-92af-553a9aa197ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{a07bbc49-8d7f-4d27-9bab-f2d9a87de7f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quazip">
+      <UniqueIdentifier>{0c72a1c1-cc9d-4baf-8214-714a4ba6a33d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LokiShared">
+      <UniqueIdentifier>{7f44a5cc-37d8-4997-a9a4-3c546e1f925e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\UIs">
+      <UniqueIdentifier>{722143c1-c7fb-4033-a981-88afeea2a1f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIs">
+      <UniqueIdentifier>{7ede8b4b-bc85-48ce-9670-8711f649a67a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_teach.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SocketClient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SocketClient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\SocketServer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SocketServer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SocketServer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\SocketClient.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SyncHandler.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SyncHandler.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncHandler.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtpiemenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtpiemenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\qtpiemenu\src\qtpiemenu.cpp">
+      <Filter>Piemenu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\qtpiemenu\src\qtpieaction.cpp">
+      <Filter>Piemenu</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtpieitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtpieitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\qtpiemenu\src\qtpieitem.cpp">
+      <Filter>Piemenu</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlWidget.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ControlWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ControlWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindowMenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindowMenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindowMenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ControlMenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ControlMenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlMenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\FileUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\inflate.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\inftrees.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\trees.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\uncompr.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\unzip.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\zip.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\zutil.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\adler32.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\compress.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\crc32.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\deflate.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\gzclose.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\gzlib.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\gzread.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\gzwrite.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\infback.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\inffast.c">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quazipdir.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quazipfile.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quazipfileinfo.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quazipnewinfo.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\JlCompress.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\qioapi.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quaadler32.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quacrc32.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quagzipfile.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quaziodevice.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\quazip\quazip\quazip.cpp">
+      <Filter>quazip</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_quazipfile.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_quazipfile.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_quagzipfile.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_quagzipfile.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_quaziodevice.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_quaziodevice.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachMessageBox.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TeachMessageBox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TeachMessageBox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_YunHttp.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_YunHttp.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\YunHttp.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtpieaction.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtpieaction.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\object.cpp">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\unpack.cc">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\version.cc">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\vrefbuffer.cc">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\zone.cc">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\Data\MessagePack\src\object1.cc">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\LokiBuffer.cpp">
+      <Filter>LokiShared</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LokiLoginDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LokiLoginDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LokiLoginDialog.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LokiClient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LokiClient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LokiClient.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\LokiCommand.cpp">
+      <Filter>LokiShared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\TyrCommand.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\TyrProtocol.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TyrProtocol.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TyrProtocol.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ThorClient.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ThorClient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ThorClient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ThorProtocol.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ThorProtocol.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ThorProtocol.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ThorServer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ThorServer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ThorServer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatMainWindow.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChatMainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChatMainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChatDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChatDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatDialog.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatTextEdit.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChatTextEdit.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChatTextEdit.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendList.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendButton.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FriendList.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FriendList.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="teach.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainWindow.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\Menu.h">
+      <Filter>Menu</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\SocketClient.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\SocketServer.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SyncHandler.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\library\qtpiemenu\src\qtpiemenu.h">
+      <Filter>Piemenu</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\library\qtpiemenu\src\qtpieaction.h">
+      <Filter>Piemenu</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\library\qtpiemenu\src\qtpieitem.h">
+      <Filter>Piemenu</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ControlWidget.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainWindowMenu.h">
+      <Filter>Menu</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ControlMenu.h">
+      <Filter>Menu</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\library\quazip\quazip\quazipfile.h">
+      <Filter>quazip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\library\quazip\quazip\quagzipfile.h">
+      <Filter>quazip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\library\quazip\quazip\quaziodevice.h">
+      <Filter>quazip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TeachMessageBox.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\YunHttp.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\LokiLoginDialog.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\LokiClient.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIs\RegisterDialog.ui">
+      <Filter>UIs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIs\ChatDialog.ui">
+      <Filter>UIs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\UIs\LokiLoginDialog.ui">
+      <Filter>Common\UIs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\TyrProtocol.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\ThorClient.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\ThorProtocol.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\ThorServer.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ChatMainWindow.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIs\ChatMainWindow.ui">
+      <Filter>UIs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ChatDialog.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ChatTextEdit.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FriendList.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FriendButton.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\FileUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quazipfileinfo.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quazipnewinfo.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\trees.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\unzip.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\zconf.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\zip.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\zlib.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\zutil.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\crc32.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\crypt.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\deflate.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\gzguts.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\inffast.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\inffixed.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\inflate.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\inftrees.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\ioapi.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\JlCompress.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quaadler32.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quachecksum32.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quacrc32.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quazip.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quazip_global.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\quazip\quazip\quazipdir.h">
+      <Filter>quazip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedCode\LokiBuffer.h">
+      <Filter>LokiShared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedCode\LokiCommand.h">
+      <Filter>LokiShared</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_RegisterDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ChatDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_LokiLoginDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\config.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\TyrCommand.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ChatMainWindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\common\common_win32.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="teach.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+<RCC>
+  <qresource prefix="/App">
+    <file alias="player">../Resources/AppIcons/player.png</file>
+    <file alias="collect">../Resources/AppIcons/collect.png</file>
+    <file alias="live">../Resources/AppIcons/live.png</file>
+    <file alias="background">../Resources/Images/background.jpg</file>
+  </qresource>
+  <qresource prefix="/Cursor">
+    <file alias="draw">../Resources/Cursors/draw.png</file>
+    <file alias="line">../Resources/Cursors/line.png</file>
+    <file alias="rect">../Resources/Cursors/rect.png</file>
+    <file alias="pRect">../Resources/Cursors/perfectRect.png</file>
+    <file alias="ellipse">../Resources/Cursors/ellipse.png</file>
+    <file alias="pEllipse">../Resources/Cursors/perfectEllipse.png</file>
+  </qresource>
+  <qresource prefix="/Icons">
+    <file alias="open">../Resources/Icons/open.png</file>
+    <file alias="save">../Resources/Icons/save.png</file>
+    <file alias="saveas">../Resources/Icons/saveas.png</file>
+    <file alias="play">../Resources/Icons/play.png</file>
+    <file alias="pause">../Resources/Icons/pause.png</file>
+    <file alias="run">../Resources/Icons/run.png</file>
+    <file alias="debug">../Resources/Icons/debug.png</file>
+  </qresource>
+  <qresource prefix="/System">
+    <file alias="fullscreen">../Resources/Images/System/fullscreen.png</file>
+    <file alias="fullscreen_exit">../Resources/Images/System/fullscreen_exit.png</file>
+    <file alias="close">../Resources/Images/System/close.png</file>
+    <file alias="max">../Resources/Images/System/max.png</file>
+    <file alias="min">../Resources/Images/System/min.png</file>
+  </qresource>
+  <qresource prefix="/qss">
+    <file alias="default">../Resources/qss/default.qss</file>
+    <file alias="1downarrow.png">../Resources/qss/1downarrow.png</file>
+    <file alias="progress_handle1.png">../Resources/qss/progress_handle1.png</file>	
+  </qresource>
+</RCC>

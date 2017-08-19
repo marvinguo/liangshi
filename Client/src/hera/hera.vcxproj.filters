@@ -1,0 +1,1352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{c16a996e-dd8e-45ea-ae31-a91e3bbcb14f}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{69ef9e2d-d67e-4c09-8d72-287584889eac}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Main Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{8b3c4c41-5091-40fb-a18a-13f754d116dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LokiShared">
+      <UniqueIdentifier>{7dbfb52f-111d-40f1-98a5-7ba003ca1ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\UIs">
+      <UniqueIdentifier>{5cfb372f-03fa-46c3-9b08-0c29462ed076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIs">
+      <UniqueIdentifier>{c4ac2b1c-c1c6-488b-9e8f-2bf9b36d3edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Element">
+      <UniqueIdentifier>{20cafb57-6911-4b82-beac-c9476a47e341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Title">
+      <UniqueIdentifier>{94139013-f170-4767-a478-c34accb813b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Action">
+      <UniqueIdentifier>{401d9679-ab39-4c54-be59-84e2f1a668e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NotMobile">
+      <UniqueIdentifier>{7fb08a2c-718c-4c2d-8716-ec3491dd32f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\FileUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Util.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AnimationThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AnimationThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="jsedit.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_jsedit.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_jsedit.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\LokiBuffer.cpp">
+      <Filter>LokiShared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SharedCode\LokiCommand.cpp">
+      <Filter>LokiShared</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_hera.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageBuffer.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\SMatrix.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\SPoint.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FourStateImageButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FourStateImageButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SysTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SysTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KeTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KeTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="HeraMainWidget.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FileTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FileTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CheckableImageButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CheckableImageButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="KeWidget.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TwoStateImageButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TwoStateImageButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerWidget.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_OneImageButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_OneImageButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SelectColorMenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SelectColorMenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SelectNumberMenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SelectNumberMenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_NumberButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_NumberButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DrawingToolsTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DrawingToolsTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KeWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KeWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlayerWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlayerWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Element.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="EllipseElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="LineElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="RectElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="TextElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleWidget.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="SysTitleWidget.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="OneImageButton.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberButton.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoStateImageButton.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorButton.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTitleWidget.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TestTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TestTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTitleWidget.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="HeraDocument.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeTitleWidget.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="FourStateImageButton.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawingToolsTitleWidget.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckableImageButton.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KePages.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KePages.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ScreenshotWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ScreenshotWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenshotWindow.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="KeFile.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageElementHelper.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ImageElementHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ImageElementHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TextElementHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TextElementHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TextElementHelper.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ImageUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TestBaseWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TestBaseWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBaseWidget.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PathElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="PathElementHelper.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementLabel.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ElementLabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ElementLabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ElementLabelBorder.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ElementLabelBorder.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementLabelBorder.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ElementResizableTitlebar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ElementResizableTitlebar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementResizableTitlebar.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AddCorrectDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AddCorrectDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="AddCorrectDialog.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlayerTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlayerTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTitleWidget.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlayerProgressBar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlayerProgressBar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerProgressBar.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AudioVolumeIndicator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AudioVolumeIndicator.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioVolumeIndicator.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="SizeAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="HideAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="TextChangedAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchPageAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="TopMostAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="BottomMostAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="LineWidthAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="LineColorAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="LineStyleAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationThread.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="KePages.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PlayerPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PlayerPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerPage.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleButton.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TitleButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TitleButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TitleComboBox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TitleComboBox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleComboBox.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HeraMainWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HeraMainWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveWidget.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveTitleWidget.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LokiClient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LokiClient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LokiClient.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Settings.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkShowAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_NotifyWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_NotifyWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="NotifyWindow.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkSwitchPageAction.cpp">
+      <Filter>Action</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraWindow.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CameraWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CameraWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="CompressedImageBuffer.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CompressedImageElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_OdinClient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_OdinClient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\OdinClient.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanBaseWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanBaseWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="BanBaseWidget.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BanContent.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BanContentVersion5.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BanDocument.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BanFile.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BanElementWithLabel.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanElementHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanElementHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="BanElementHelper.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="BanElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBanElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBanElementWithLabel.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanList.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanList.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="BanList.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanCheckableButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanCheckableButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="BanCheckableButton.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanCategoryList.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanCategoryList.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="BanCategoryList.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanBrowserDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanBrowserDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="BanBrowserDialog.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="BanTitleWidget.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlTextElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HtmlTextElementHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HtmlTextElementHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlTextElementHelper.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="formulaview.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_formulaview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_formulaview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="qwt_mml_document.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="qwt_mml_entity_table.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HtmlElementEditor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HtmlElementEditor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlElementEditor.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HtmlElementViewer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HtmlElementViewer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlElementViewer.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlElementPainter.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="qtmmlwidget.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_VideoWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_VideoWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoWidget.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChineseMessageBox.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\BanScriptWidget.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanScriptWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanScriptWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\ImageElementScriptValue.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\ScriptTitleWidget.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ScriptTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ScriptTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\TextElementScriptValue.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\BanElementScriptValue.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanElementScriptValue.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanElementScriptValue.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\BanScriptDeps.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\BanScriptDepsDialog.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanScriptDepsDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanScriptDepsDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\BanScriptEditor.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanScriptEditor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanScriptEditor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\BanScriptRuntime.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BanScriptRuntime.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BanScriptRuntime.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KeTime.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_KeTime.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="KeTime.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrigialDrawElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TitleCheckBox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TitleCheckBox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleCheckBox.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HeraDocManager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HeraDocManager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="HeraDocManager.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\FontUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="MobileVideoWidget.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobileVideoWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobileVideoWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="HackManager.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageStateElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="BanStateElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hera.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageBaseElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LokiSocket.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LokiSocket.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\LokiSocket.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Douglas.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="ToVector.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="FitCurves.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpiemenu.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpieaction.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="qtpieitem.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Menu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Menu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtpiemenu.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtpiemenu.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtpieitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtpieitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtpieaction.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtpieaction.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectColorMenu.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectNumberMenu.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\PptAnalyser.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\PdfAnalyser.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+    <ClCompile Include="Slide.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="SlidePresenterManager.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SlidePresenter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SlidePresenter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SlidePresenter.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Slide.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Slide.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkdownWidget.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="NotMobile\PptSlide.cpp">
+      <Filter>NotMobile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="jsedit.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\UIs\LokiLoginDialog.ui">
+      <Filter>Common\UIs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hera.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UIs\MaterialBrowserDialog.ui">
+      <Filter>UIs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="KeWidget.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PlayerWidget.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ImageElement.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TextElement.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TitleWidget.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SysTitleWidget.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OneImageButton.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NumberButton.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TwoStateImageButton.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ColorButton.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FileTitleWidget.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TestTitleWidget.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HeraDocument.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="KeTitleWidget.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FourStateImageButton.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DrawingToolsTitleWidget.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CheckableImageButton.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ScreenshotWindow.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ImageElementHelper.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TextElementHelper.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TestBaseWidget.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ElementLabel.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ElementLabelBorder.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ElementResizableTitlebar.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AddCorrectDialog.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PlayerTitleWidget.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PlayerProgressBar.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AudioVolumeIndicator.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AnimationThread.h">
+      <Filter>Action</Filter>
+    </CustomBuild>
+    <CustomBuild Include="KePages.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PlayerPage.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TitleButton.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TitleComboBox.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HeraMainWidget.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveWidget.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveTitleWidget.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\LokiClient.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NotifyWindow.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CameraWindow.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\OdinClient.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BanBaseWidget.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BanFile.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BanElementHelper.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BanElement.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BanList.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BanCheckableButton.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BanCategoryList.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BanBrowserDialog.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BanTitleWidget.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HtmlTextElementHelper.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="formulaview.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HtmlElementEditor.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HtmlElementViewer.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HtmlElementPainter.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="VideoWidget.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NotMobile\BanScriptWidget.h">
+      <Filter>NotMobile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NotMobile\ScriptTitleWidget.h">
+      <Filter>NotMobile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NotMobile\BanElementScriptValue.h">
+      <Filter>NotMobile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NotMobile\BanScriptDepsDialog.h">
+      <Filter>NotMobile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NotMobile\BanScriptEditor.h">
+      <Filter>NotMobile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NotMobile\BanScriptRuntime.h">
+      <Filter>NotMobile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="KeTime.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TitleCheckBox.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HeraDocManager.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobileVideoWidget.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HackManager.h">
+      <Filter>Main Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\LokiSocket.h">
+      <Filter>Common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Menu.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qtpiemenu.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qtpieitem.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qtpieaction.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SelectNumberMenu.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SelectColorMenu.h">
+      <Filter>Title</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SlidePresenterManager.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SlidePresenter.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Slide.h">
+      <Filter>Element</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="collect_zh.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\FileUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Util.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\config.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\library.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedCode\LokiBuffer.h">
+      <Filter>LokiShared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedCode\LokiCommand.h">
+      <Filter>LokiShared</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_LokiLoginDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageBuffer.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SMatrix.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SPoint.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SColor.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MaterialBrowserDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Element.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="EllipseElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="LineElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="RectElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Qt.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="KeFile.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ImageUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PathElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="PathElementHelper.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="SizeAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="HideAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="TextChangedAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="SwitchPageAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="TopMostAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="BottomMostAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="LineWidthAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="LineColorAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="LineStyleAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Settings.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkShowAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkSwitchPageAction.h">
+      <Filter>Action</Filter>
+    </ClInclude>
+    <ClInclude Include="CompressedImageBuffer.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CompressedImageElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="BanContent.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BanContentVersion5.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BanDocument.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BanElementWithLabel.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="TestBanElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="TestBanElementWithLabel.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\rc_config.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlTextElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt_mml_entity_table.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="qwt_mml_document.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="qtmmlwidget.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="ChineseMessageBox.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NotMobile\ImageElementScriptValue.h">
+      <Filter>NotMobile</Filter>
+    </ClInclude>
+    <ClInclude Include="NotMobile\TextElementScriptValue.h">
+      <Filter>NotMobile</Filter>
+    </ClInclude>
+    <ClInclude Include="NotMobile\BanScriptDeps.h">
+      <Filter>NotMobile</Filter>
+    </ClInclude>
+    <ClInclude Include="OrigialDrawElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\FontUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Singleton.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageStateElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="BanStateElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\QtSingleton.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Hera.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageBaseElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Douglas.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="ToVector.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="FitCurves.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="NotMobile\PptAnalyser.h">
+      <Filter>NotMobile</Filter>
+    </ClInclude>
+    <ClInclude Include="NotMobile\PdfAnalyser.h">
+      <Filter>NotMobile</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkdownWidget.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="NotMobile\PptSlide.h">
+      <Filter>NotMobile</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hera.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,431 @@
+ScCheckableButton{
+    background-color:#eeeeee;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-width: 9ex;
+    min-height: 2.5ex;
+}
+
+ScCheckableButton:hover {
+    background-color: khaki;
+    border-color: #AF50B7;
+}
+
+ScCheckableButton:checked {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: #32CC32;
+}
+
+MetroButton {
+    border-radius: 2;
+    border-width: 2px;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: bold;
+    background: transparent;
+    color: black;
+}
+
+MetroButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #A951BC, stop: 0.4 #010101,stop: 0.5 #000101, stop: 1.0 #9432C1);
+    border-color: #4D90FE;
+}
+
+KeItemButton {
+    background-color: white;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-height: 40px;
+    width: 100%;
+    font-weight: 100;
+    font-style: bold;
+    font-size: 20px;
+    color: black;
+}
+
+KeItemButton:hover {
+    background-color: red;
+}
+
+ItemButton {
+    background-color: white;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-height: 40px;
+    width: 100%;
+    font-weight: 100;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
+ItemButton:hover {
+    background-color: red;
+}
+
+MenuButton {
+    background-color: white;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-height: 40px;
+    width: 100%;
+    font-weight: 100;
+    font-style: bold;
+    font-size: 20px;
+    color: black;
+}
+
+HeaderLabel {
+    background-color: #3F89EC;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-height: 40px;
+    width: 100%;
+    font-weight: 100;
+    font-style: bold;
+    font-size: 20px;
+    color: white;
+    qproperty-alignment: AlignCenter;
+}
+
+LoginTitleLabel {
+    background: transparent;
+    border: none;
+    font-style: bold;
+    font-size: 60px;
+    color: red;
+    /*text-align: center;*/
+    qproperty-alignment: AlignCenter;
+}
+
+LoginBottomLabel {
+    font-size: 20px;
+}
+
+LoginLabel {
+    background-color: #3F89EC;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-height: 50px;
+    width: 100%;
+    font-weight: 100;
+    font-style: bold;
+    font-size: 30px;
+    color: white;
+}
+
+LoginButton {
+    background-color: #3F89EC;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-height: 50px;
+    font-weight: 100;
+    font-style: bold;
+    font-size: 30px;
+    color: white;
+}
+
+LoginCheckBox {
+    background-color: #3F89EC;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-height: 50px;
+    font-weight: 100;
+    font-style: bold;
+    font-size: 30px;
+    color: white;
+}
+
+LoginEdit:focus {
+    border-color: red;
+}
+
+LoginEdit {
+/*    background-color: #3F89EC;*/
+    background: transparent;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-height: 50px;
+    width: 70%;
+    font-weight: 100;
+    font-style: bold;
+    font-size: 30px;
+    color: black;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+/*设置成SlidingWidget都会有背景，不知道这个是不是因为嵌入在里面的原因*/
+LoginWidget {
+    background-color: #3F89EC;
+ /*   background: transparent;
+    background-image: url(:/App/background);*/
+}
+
+VerificationCodeImage {
+    min-height: 50px;
+    min-width: 100px;
+}
+
+ActivityTitlebar {
+    background-color: #3F89EC;
+}
+
+ActivityTitleButton {
+    background-color: #3F89EC;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    font-weight: 100;
+    font-style: bold;
+    font-size: 40px;
+    color: white;
+}
+
+ActivityTitleButton:disabled {
+    background-color: grey;
+}
+
+ActivityTitleLabel {
+    background: transparent;
+    border: none;
+    font-style: bold;
+    font-size: 40px;
+    color: red;
+    qproperty-alignment: AlignCenter;
+}
+
+ActivityContent {
+    background: transparent;
+    border: none;
+    font-style: bold;
+    font-size: 40px;
+    color: red;
+}
+
+ActivitySingleList {
+    background: transparent;
+    border: none;
+    font-style: bold;
+    font-size: 40px;
+    color: blue;
+}
+
+ActivitySingleList::item
+{
+    min-height: 50px;
+}
+
+ActivityDoubleList {
+    background: transparent;
+    border: none;
+    font-style: bold;
+    font-size: 40px;
+    color: blue;
+}
+
+ActivityDoubleList::item
+{
+    min-height: 50px;
+}
+
+/*Ke*/
+ColorButton {
+    background-color: #3F89EC;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    font-weight: 100;
+    font-style: bold;
+    font-size: 40px;
+    color: black;
+}
+
+/*这个不起作用，void QWidgetPrivate::setMask_sys(const QRegion&): Not supported on android.
+QtPieMenu {
+    background: transparent;
+}
+*/
+
+BusyDialog {
+  /*background: transparent;*/
+  background-color: white;
+}
+
+BusyIndicator {
+  background: transparent;
+}
+
+/*Player*/
+
+PlayerProgressBar {
+  min-width: 500;
+}
+
+PlayerProgressBar::add-page:Horizontal {
+  background-color: rgb(87, 97, 106);
+  height:4px;
+}
+
+PlayerProgressBar::sub-page:Horizontal {
+  background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(231,80,229, 255), stop:1 rgba(7,208,255, 255));
+  height:4px;
+}
+ 
+PlayerProgressBar::groove:horizontal {
+  background:transparent;
+  height:6px;
+ }
+
+ PlayerProgressBar::handle:horizontal {
+  height:20px;
+  width:20px;
+  border-image: url(:/qss/progress_handle2.png);
+  margin: -5 -13px;
+ }
+
+/*Live*/
+
+
+TitleButton {
+    background-color: #eeeeee;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+    min-width: 9ex;
+    min-height: 2.5ex;
+}
+
+TitleButton:hover {
+    background-color: khaki;
+    border-color: #AF50B7;
+}
+
+TitleButton:checked {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: #32CC32;
+}
+
+TitleComboBox{
+    background-color: #eeeeee;
+    border-width: 1px;
+    border-color: #4D90FE;
+    border-style: solid;
+    border-radius: 2;
+    padding: 3px;
+}
+
+TitleComboBox:hover {
+    background-color: khaki;
+    border-color: #AF50B7;
+}
+
+ TitleComboBox::down-arrow {
+     image: url(:/qss/1downarrow.png);
+ }
+
+TextElementHelper, ImageElementHelper, ScElementHelper{
+    border : 2px solid yellow;
+/*
+    padding : 0px;
+    padding-top : 0px;
+    margin:0px;
+    list-style:none;
+    text-indent:0;
+*/
+}
+
+HtmlTextElementHelper{
+    border : 2px solid white;
+/*
+    padding : 0px;
+    padding-top : 0px;
+    margin:0px;
+    list-style:none;
+    text-indent:0;
+*/
+}
+
+ AudioVolumeIndicator {
+     text-align: center;
+ }
+
+ AudioVolumeIndicator::chunk {
+     background-color: #CD96CD;
+     width: 10px;
+ }
+
+
+/*
+ScCategoryList, ScList{
+    show-decoration-selected: 1;
+    background-color: #5E3D90;
+}
+*/
+
+/*
+ScCategoryList::item{
+    height:30px;
+}
+*/
+
+/*
+ScCategoryList::item:hover {
+    background-color: wheat;
+}
+*/
+
+QListView {
+    show-decoration-selected: 1;
+}
+
+QListView::item:hover {
+    background-color: wheat;
+}
+
+QToolTip {
+    border: 1px solid darkkhaki;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 200;
+    background-color: #F7FF19;
+    font-style: bold;
+    color: #090909;
+}
+

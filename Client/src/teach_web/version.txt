@@ -1,0 +1,3 @@
+mainwindow.cpp
+rc_config.h
+setup.iss

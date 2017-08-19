@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "quazip", "quazip\quazip.vcxproj", "{5B24853E-41DA-3B8C-B242-692F25108329}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qztest", "qztest\qztest.vcxproj", "{54E2755E-0F84-3263-9CF0-B4FAEBDB86C7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5B24853E-41DA-3B8C-B242-692F25108329} = {5B24853E-41DA-3B8C-B242-692F25108329}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B24853E-41DA-3B8C-B242-692F25108329}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5B24853E-41DA-3B8C-B242-692F25108329}.Debug|Win32.Build.0 = Debug|Win32
+		{5B24853E-41DA-3B8C-B242-692F25108329}.Release|Win32.ActiveCfg = Release|Win32
+		{5B24853E-41DA-3B8C-B242-692F25108329}.Release|Win32.Build.0 = Release|Win32
+		{54E2755E-0F84-3263-9CF0-B4FAEBDB86C7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{54E2755E-0F84-3263-9CF0-B4FAEBDB86C7}.Debug|Win32.Build.0 = Debug|Win32
+		{54E2755E-0F84-3263-9CF0-B4FAEBDB86C7}.Release|Win32.ActiveCfg = Release|Win32
+		{54E2755E-0F84-3263-9CF0-B4FAEBDB86C7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		Qt5Version = msvc2010_opengl
+	EndGlobalSection
+EndGlobal

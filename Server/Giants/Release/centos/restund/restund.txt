@@ -1,0 +1,94 @@
+This guide describes how to install and configure RESTUND STUN/TURN server for supporting TURN functionality. 
+This sollution is still in TESTING STATE!!!
+TURN server seems to work properly, but sometimes the klient channel allocation on server side is not working and the media stream wont start!
+Testing with: Restund v0.4.0, Kamailio v3.2, X-lite 4.
+ 
+ 
+First we need to install compiler g++ and make:
+ apt-get install g++ make
+ 
+The instalation and configuration of RESTUND STUN/TURN server takes more steps (official site http://www.creytiv.com/restund.html). 
+The first sten is installing libre (Toolkit library for asynchronous network IO with protocol stacks including SIP, SDP, RTP, STUN, TURN, ICE, BFCP and DNS):
+ wget http://www.creytiv.com/pub/re-0.4.0.tar.gz
+
+ tar xf re-0.4.0.tar.gz
+
+ cd re-0.4.0/
+
+ make
+
+ make install
+Now we can install the STUN/TURN server:
+ wget http://www.creytiv.com/pub/restund-0.4.0.tar.gz
+
+ tar xf restund-0.4.0.tar.gz
+
+ cd restund-0.4.0/
+
+ make
+
+ make install
+And finally the configuration file. The sample configuration file is in restund etc directory:
+joe .../restund-0.4.0/etc/restund.conf
+Hint: Some notes about configuration file items could be find in .../restund/docs/restund.txt
+ 
+Following changes in configuration file will provide the basic TURN server functionality:
+debug                     yes
+syncinterval              600
+udp_listen                158.193.139.47:3478 #YOUR IP ADDRESS
+udp_listen                158.193.139.48:3478 #YOUR IP ADDRESS
+udp_sockbuf_size          524288
+tcp_listen                158.193.139.47:3478 #YOUR IP ADDRESS
+tcp_listen                158.193.139.48:3478 #YOUR IP ADDRESS
+
+# modules
+module_path               /usr/local/lib/restund/modules
+module                    stat.so
+module                    binding.so
+#module                   auth.so   #no authentication configured, so comment
+module                    turn.so
+#module                   mysql_ser.so  #Mysql  not yes supported, so comment
+module                    syslog.so
+module                    status.so
+
+# turn
+turn_max_allocations   512
+turn_max_lifetime      600
+turn_relay_addr        158.193.139.47 #YOUR IP ADDRESS
+#turn_relay_addr6      ::1 #comment if not using IPv6 
+
+#Mysql  not yes supported, so comment following lines
+# mysql
+#mysql_host                     localhost
+#mysql_user                     ser
+#mysql_pass                     heslo
+#mysql_db                        ser
+ 
+ After making changes above copy the configuration file into /etc/ directory:
+cp .../restund-0.4.0/etc/restund.conf /etc/
+ 
+To run RESTUND STUN/TURN server use following command:
+restund /etc/restund.conf
+With debbuging mode on following message (or similar) appear:
+?
+udp listen: 158.193.139.47:3478  udp listen: 158.193.139.48:3478
+tcp listen: 158.193.139.47:3478
+tcp listen: 158.193.139.48:3478
+stat: module loaded
+binding: module loaded
+turn: lifetime=120 ext=158.193.139.47 ext6=? bsz=1024
+syslog: module loaded facility=24
+status: module loaded (udp=127.0.0.1:33000 http=158.193.139.47:8080)
+ 
+To see the actual status of your TURN server, we need to install apache server:
+apt-get install apache2
+ 
+And next do following changes in configuration file:
+# status
+#status_udp_addr      127.0.0.1 #comment
+#status_udp_port      33000     #comment
+status_http_addr      158.193.139.47 #YOUR IP ADDRESS
+status_http_port      8080 #port for http access
+ 
+Restart your RESTUND STUN/TURN server. Now you are able to if your server is running and how long with your web browser:
+http://YOUR_IP_ADDRESS:8080

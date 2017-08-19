@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rect.png</file>
+        <file>ellipse.png</file>
+        <file>line.png</file>
+        <file>path.png</file>
+        <file>point.png</file>
+        <file>roundedRect.png</file>
+        <file>eraser.png</file>
+        <file>undo.png</file>
+    </qresource>
+</RCC>
